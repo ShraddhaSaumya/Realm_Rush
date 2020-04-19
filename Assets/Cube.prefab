@@ -700,7 +700,7 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 114
+  m_FontSize: 144
   m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 1d246114be433ed45b65e4b90c479b33, type: 3}
