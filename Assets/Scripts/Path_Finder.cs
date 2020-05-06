@@ -21,12 +21,16 @@ public class Path_Finder : MonoBehaviour
 
     public List<WayPoint> GetPath()
     {
-        LoadBlocks();
-        ColorStartandEnd();
-        BreadthFirstSearch();
-        FormPath();
+        if (path.Count == 0)
+        {
+            LoadBlocks();
+            ColorStartandEnd();
+            BreadthFirstSearch();
+            FormPath();
+        }
         return path;
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -118,6 +122,5 @@ public class Path_Finder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

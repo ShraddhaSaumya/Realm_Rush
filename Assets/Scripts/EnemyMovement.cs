@@ -8,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // print("I'm at Start again");
         Path_Finder path_finder = FindObjectOfType<Path_Finder>();
         var path = path_finder.GetPath();
         StartCoroutine(FollowPath(path));
