@@ -4744,8 +4744,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToPan: {fileID: 3417175714554170060}
-  ShootRange: 30
+  ShootRange: 40
   projectileParticle: {fileID: 3414482182591283295}
+  baseWayPoint: {fileID: 0}
 --- !u!1001 &3414482182066387507
 PrefabInstance:
   m_ObjectHideFlags: 0
