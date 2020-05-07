@@ -9,7 +9,6 @@ public class WayPoint : MonoBehaviour
     Vector2Int gridPos;
     public WayPoint exploredFrom;  // public fine as it is data class
     public bool isPlaceable = true;
-    [SerializeField] Tower towerPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +20,7 @@ public class WayPoint : MonoBehaviour
         {
             if (isPlaceable)
             {
-                Instantiate(towerPrefab, transform.position, Quaternion.identity);
-                isPlaceable = false;
+                FindObjectOfType<TowerFactory>().AddTower(this);
             }
             else
             {
