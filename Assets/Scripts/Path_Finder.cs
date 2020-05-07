@@ -24,7 +24,6 @@ public class Path_Finder : MonoBehaviour
         if (path.Count == 0)
         {
             LoadBlocks();
-            ColorStartandEnd();
             BreadthFirstSearch();
             FormPath();
         }
@@ -38,15 +37,21 @@ public class Path_Finder : MonoBehaviour
 
     private void FormPath()
     {
-        path.Add(EndWP);
+        SetAsPath(EndWP);
         WayPoint previous = EndWP.exploredFrom;
         while (previous != StartWP)
         {
-            path.Add(previous);
+            SetAsPath(previous);
             previous = previous.exploredFrom;
         }
-        path.Add(StartWP);
+        SetAsPath(StartWP);
         path.Reverse();
+    }
+
+    private void SetAsPath(WayPoint wayPoint)
+    {
+        path.Add(wayPoint);
+        wayPoint.isPlaceable = false;
     }
 
     private void BreadthFirstSearch()
@@ -94,12 +99,6 @@ public class Path_Finder : MonoBehaviour
             queue.Enqueue(neighbour);
             neighbour.exploredFrom = SearchCenter;
         }
-    }
-
-    private void ColorStartandEnd()
-    {
-        StartWP.SetTopColor(Color.green); //Color is a structure
-        EndWP.SetTopColor(Color.cyan);
     }
 
     private void LoadBlocks()
