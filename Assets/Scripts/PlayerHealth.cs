@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int health = 10;
-    [SerializeField] int healthDeacrease = 1;
+    [SerializeField] int healthDecrease = 1;
     [SerializeField] Text healthText;
 
     private void Start()
@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        health = health - healthDeacrease;
+        health = health - healthDecrease;
         healthText.text = health.ToString();
     }
 }

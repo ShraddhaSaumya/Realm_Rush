@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionMesh: {fileID: 0}
-  hitpoints: 8
+  hitpoints: 10
   hitParticlePrefab: {fileID: 1504482152116608011}
   deathParticlePrefab: {fileID: 196968127606075140}
 --- !u!114 &8905752892200348190
