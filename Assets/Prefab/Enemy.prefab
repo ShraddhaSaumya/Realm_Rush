@@ -64,7 +64,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9767f9587f97549a4d9c7cb68f7710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionMesh: {fileID: 0}
   hitpoints: 10
   hitParticlePrefab: {fileID: 1504482152116608011}
   deathParticlePrefab: {fileID: 196968127606075140}
