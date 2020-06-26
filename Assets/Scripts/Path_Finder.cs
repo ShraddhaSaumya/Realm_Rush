@@ -30,11 +30,6 @@ public class Path_Finder : MonoBehaviour
         return path;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     private void FormPath()
     {
         SetAsPath(EndWP);
@@ -116,10 +111,5 @@ public class Path_Finder : MonoBehaviour
                 grid.Add(gridPos, wayPoint);
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

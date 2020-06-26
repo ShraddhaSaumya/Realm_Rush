@@ -10,7 +10,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Text SpawnedEnemies;
     [SerializeField] int Score;
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(RepeatedSpawningEnemies());
